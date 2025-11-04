@@ -1,0 +1,11 @@
+<h1>Stock Page</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <app-stock-add (OnNewStock)="stockService.addStock($event)"></app-stock-add>
+  </div>
+  <div class="col">
+    <app-stock-list [stockList]="stockService.stockList()"></app-stock-list>
+  </div>
+</div>

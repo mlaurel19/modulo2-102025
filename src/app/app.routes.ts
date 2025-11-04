@@ -19,7 +19,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/users/users')
   },
   {
+    path: 'reactivestock',
+    loadComponent: () => import('./pages/reactive-stock/reactive-stock')
+  },
+  {
     path: '**',
-    redirectTo: 'reactive'
+    redirectTo: 'reactivestock'
   }
 ];
